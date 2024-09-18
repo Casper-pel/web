@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    min-height: 100%;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header{
+    width: 100%;
+    height: 150px;
+    /* background: blue; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-weight: 700;
+}
+
+.header h1{
+    margin: -7px 50px 0 200px;
+}
+
+.header ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.header ul li{
+    font-size: 16px;
+    height: 40px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    color: #777;
+}
+
+.header ul li:hover{
+    cursor: pointer;
+    background: #eee;
+}
+
+.header .logBar{
+    position: absolute;
+    right: 0;
+    margin-right: 200px;
+}
+
+.header .signUp{
+    margin-right: 0;
+    margin-left: 20px;
+    background: hsl(180,66%,49%);
+    color: white;
+}
+
+.header .signUp:hover{
+    background: hsl(257, 27%, 26%);
+}
+
+.content1{
+    display: flex;
+    /* background: gray; */
+    position: relative;
+    height: 482px;
+    /* justify-content: space-between; */
+}
+
+.content1 img{
+    position: absolute;
+    right: 50px;
+}
+
+.text{
+    margin-left: 200px;
+    margin-top: 75px;
+    background: white;
+    width: 550px;
+    font-size: 20px;
+}
+
+.text h1{
+    font-size: 70px;
+    /* margin-top: -50px; */
+    line-height: 80px;
+}
+
+.text p{
+    margin-top: 10px;
+    color: #777;
+    font-weight: 600;
+}
+
+.text button{
+    margin-top: 35px;
+    color: white;
+    background: hsl(180,66%,49%);
+    border: 0;
+    outline: 0;
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.text button:hover{
+    cursor: pointer;
+    background: hsl(257, 27%, 26%);
+}
+
+.input{
+    height: 150px;
+    background: hsl(257, 27%, 26%) url(images/bg-shorten-desktop.svg) no-repeat;
+    background-size: cover;
+    margin: 0 200px;
+    margin-top: 75px;
+    border-radius: 9px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 80px;
+    z-index: 1;
+}
+
+.input input{
+    flex: 1;
+    margin-right: 50px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    border-radius: 9px;
+    padding: 0 20px;
+    font-size: 17px;
+}
+
+.empty{
+    position: absolute;
+    left: 80px;
+    bottom: 20px;
+    font-style: italic;
+    color: red;
+    display: none;
+}
+
+.error{
+    position: absolute;
+    left: 80px;
+    bottom: 20px;
+    font-style: italic;
+    color: red;
+    display: none;
+}
+
+.input button{
+    width: 150px;
+    height: 50px;
+    color: white;
+    background: hsl(180,66%,49%);
+    border: 0;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 9px;
+}
+
+.input button:hover{
+    background: hsla(180, 66%, 49%, 0.6);
+    cursor: pointer;
+}
+
+.content2{
+    background: hsl(0,0%,85%);
+    position: relative;
+    margin-top: -75px;
+    z-index: 0;
+    padding-top: 75px;
+}
+
+.linkBox{
+    height: 60px;
+    margin: 20px 200px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.links p:last-of-type{
+    color: hsl(180,66%,49%);
+}
+
+.linkBox button{
+    width: 125px;
+    height: 40px;
+    margin-left: 20px;
+    color: white;
+    background: hsl(180,66%,49%);
+    border: 0;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.linkBox button:hover{
+    cursor: pointer;
+    background: hsla(180, 66%, 49%, 0.6);
+}
+
+.linkBox:first-of-type{
+    margin-top: 30px;
+}
+
+.content2 .text1{
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    width: 450px;
+}
+
+.content2 .text1 h1{
+    font-size: 40px;
+}
+
+.content2 .text1 p{
+    font-weight: 600;
+    color: #666;
+    margin-top: 15px;
+}
+
+.content2 .boxes{
+    margin: 100px 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    position: relative;
+}
+
+.box{
+    width: 350px;
+    height: 250px;
+    background: white;
+    border-radius: 5px;
+    padding: 0 30px 0px 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.box2{
+    margin-top: 37px;
+}
+
+.box3{
+    margin-top: 74px;
+}
+
+.box div{
+    background: hsl(260, 8%, 14%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: relative;
+    top: -37.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box div img{
+    width: 35px;
+}
+
+.box h2{
+    margin-top: -10px;
+}
+
+.box p{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #666;
+}
+
+.line{
+    width: 600px;
+    height: 10px;
+    background: hsl(180,66%,49%);
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    z-index: 0;
+}
+
+.bottom{
+    background: hsl(257, 27%, 26%) url(images/bg-boost-desktop.svg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 60px 50px;
+}
+
+.bottom h1{
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.bottom button{
+    color: white;
+    background: hsl(180,66%,49%);
+    border: 0;
+    width: 175px;
+    font-size: 17px;
+    font-weight: 600;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.bottom button:hover{
+    cursor: pointer;
+    background: hsla(180, 66%, 49%, 0.6);
+}
+
+.footer{
+    background: hsl(260, 8%, 14%);
+    display: flex;
+    padding: 60px 200px;
+    color: white;
+    justify-content: space-between;
+}
+
+.footer h1{
+    height: 35px;
+    font-size: 35px;
+    line-height: 35px;
+    /* margin-right: 100px; */
+}
+
+.lists{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    color: #aaa;
+}
+
+.lists li:first-of-type{
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.lists li:first-of-type:hover{
+    cursor: default;
+}
+.lists li{
+    list-style-type: none;
+    margin-top: 7px;
+    font-weight: 500;
+}
+
+.lists li:hover{
+    cursor: pointer;
+    color: #ddd;
+}
+
+.footer img{
+    align-self: flex-start;
+    margin-left: 15px;
+}
+
+.footer img:hover{
+    cursor: pointer;
+}
+
